@@ -15,7 +15,7 @@ public class CrusherBehavior : MonoBehaviour
         }
         float newXPosition = transform.position.x + speed * Time.fixedDeltaTime;
         float newYPosition = transform.position.y;
-        Vector2 newPosition = new Vector2(newXPosition, newYPosition);
+        Vector3 newPosition = new Vector3(newXPosition, newYPosition, -1);
         transform.position = newPosition;
     }
 }

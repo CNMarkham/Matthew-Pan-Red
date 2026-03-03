@@ -48,7 +48,7 @@ public class Movement : MonoBehaviour
             float verticalMovement = rigidBody.velocity.y;
             if (verticalMovement != 0)
             {
-                speed = masterSpeed / 3;
+                speed = masterSpeed;
             }
             else
             {
