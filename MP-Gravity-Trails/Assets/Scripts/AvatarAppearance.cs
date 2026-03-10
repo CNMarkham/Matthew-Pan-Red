@@ -204,12 +204,12 @@ public class AvatarAppearance : MonoBehaviour
         }
 
         //hand parts
-        if (handPartNumber != 0)
-        {
-            int hdpartNumber = (int)handPartNumber;
-            handPart = GameObject.Find("HandPart" + hdpartNumber.ToString("00"));
-            handPart.GetComponent<SpriteRenderer>().enabled = true;
-        }
+        //if (handPartNumber != 0)
+        //{
+        //    int hdpartNumber = (int)handPartNumber;
+        //    handPart = GameObject.Find("HandPart" + hdpartNumber.ToString("00"));
+        //    handPart.GetComponent<SpriteRenderer>().enabled = true;
+        //}
 
         //upper body parts
         if (upperBodyPartNumber != 0)
@@ -247,12 +247,12 @@ public class AvatarAppearance : MonoBehaviour
         }
 
         //hand parts
-        for (var hand = 1; hand <= maxHand; hand++)
-        {
-            partNumber = hand.ToString("00");
-            handPart = GameObject.Find("HandPart" + partNumber);
-            handPart.GetComponent<SpriteRenderer>().enabled = false;
-        }
+        //for (var hand = 1; hand <= maxHand; hand++)
+        //{
+        //    partNumber = hand.ToString("00");
+        //    handPart = GameObject.Find("HandPart" + partNumber);
+        //    handPart.GetComponent<SpriteRenderer>().enabled = false;
+        //}
 
         //upper body parts
         for (var upper = 1; upper <= maxUpperBody; upper++)
