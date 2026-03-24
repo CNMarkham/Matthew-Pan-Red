@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 83187013}
   m_Layer: 0
   m_Name: Ammunition (1)
-  m_TagString: Untagged
+  m_TagString: Collectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,7 +485,7 @@ Transform:
   m_GameObject: {fileID: 83187011}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.07, y: -5.56, z: 0.05905056}
+  m_LocalPosition: {x: 4.36, y: -5.56, z: 0.05905056}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1308,6 +1308,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectThrown: {fileID: 175426473698513584, guid: a5b88740b4b22df438d68740f2489749, type: 3}
+  offset: {x: 0, y: 0, z: 0}
+  magazineAmount: 0
 --- !u!1 &398265346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1403,7 +1405,7 @@ GameObject:
   - component: {fileID: 402889681}
   m_Layer: 0
   m_Name: Ammunition (2)
-  m_TagString: Untagged
+  m_TagString: Collectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2163,7 +2165,7 @@ GameObject:
   - component: {fileID: 603853002}
   m_Layer: 0
   m_Name: Ammunition
-  m_TagString: Untagged
+  m_TagString: Collectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2287,7 +2289,7 @@ GameObject:
   - component: {fileID: 686523775}
   m_Layer: 0
   m_Name: Ammunition (4)
-  m_TagString: Untagged
+  m_TagString: Collectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3176,7 +3178,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.659665, y: 2.497491, z: -13.21}
+  m_LocalPosition: {x: -13.191336, y: 2.4974914, z: -13.21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5598,7 +5600,7 @@ GameObject:
   - component: {fileID: 1703744196}
   m_Layer: 0
   m_Name: Ammunition (3)
-  m_TagString: Untagged
+  m_TagString: Collectables
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
