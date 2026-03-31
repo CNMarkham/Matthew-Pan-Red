@@ -18,7 +18,8 @@ public class Throwable : MonoBehaviour
     {
         if (Input.GetButtonDown("Pick Up"))
         {
-            if (ammunitionAmount > 0) {
+            if (ammunitionAmount > 0) 
+            {
                 offset = transform.localScale.x * new Vector3(1, 0, 0);
                 Vector3 throwablePosition = transform.position + offset;
                 GameObject bullet = Instantiate(objectThrown, throwablePosition, Quaternion.identity);

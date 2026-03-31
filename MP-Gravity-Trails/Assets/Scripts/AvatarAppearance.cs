@@ -148,7 +148,7 @@ public class AvatarAppearance : MonoBehaviour
     private string partNumber;
     private int maxHat = 25;
     private int maxFace = 14;
-    private int maxHand = 16;
+//    private int maxHand = 16;
     private int maxUpperBody = 18;
     private int maxLowerBody = 19;
 
