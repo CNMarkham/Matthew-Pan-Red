@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Throwable : MonoBehaviour
 {
     public GameObject objectThrown;
     public Vector3 offset;
     public int ammunitionAmount;
+    public Text collectabLeCounter;
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class Throwable : MonoBehaviour
                 GameObject bullet = Instantiate(objectThrown, throwablePosition, Quaternion.identity);
                 bullet.transform.Rotate(0, 90, 0);
                 ammunitionAmount -= 1;
+                collectabLeCounter.text = ammunitionAmount.ToString();
             }
         }
     }
@@ -33,6 +36,7 @@ public class Throwable : MonoBehaviour
         if (collision.gameObject.CompareTag("Collectables"))
         {
             ammunitionAmount += 5;
+            collectabLeCounter.text = ammunitionAmount.ToString();
             Destroy(collision.gameObject);
         }
     }
