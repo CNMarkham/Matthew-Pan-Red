@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Collectables
   - ohLawdHesGotAGun
+  - Exit
   layers:
   - Default
   - TransparentFX
