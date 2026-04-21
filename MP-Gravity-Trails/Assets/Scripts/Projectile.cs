@@ -5,11 +5,13 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public Throwable direction;
+    public Teleport portal;
     public float speed;
     // Start is called before the first frame update
     void Start()
     {
         direction = GameObject.FindGameObjectWithTag("Player").GetComponent<Throwable>();
+        portal = GameObject.FindGameObjectWithTag("Exit").GetComponent<Teleport>();
         Invoke("DestroyThrowable", 5f);
     }
 
@@ -22,6 +24,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
+            portal.enemyCount--;
             Destroy(collision.gameObject);
             Invoke("DestroyThrowable", 0f);
         }
