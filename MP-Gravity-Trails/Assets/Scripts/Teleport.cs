@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class Teleport : MonoBehaviour
 {
     public int enemyCount;
+    public string Level;
     // Start is called before the first frame update
     void Start()
     {
-        enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        
     }
 
     // Update is called once per frame
@@ -19,9 +20,10 @@ public class Teleport : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
         if (collision.gameObject.tag == "Player" && enemyCount == 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(Level);
         }
     }
 }
