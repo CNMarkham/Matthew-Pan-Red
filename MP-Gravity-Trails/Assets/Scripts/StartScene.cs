@@ -18,6 +18,6 @@ public class StartScene : MonoBehaviour
     }
     public void OnMouseDown()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 }
