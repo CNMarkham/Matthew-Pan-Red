@@ -19,7 +19,7 @@ public class CodeyMove : MonoBehaviour
     void Update()
     {
        
-        if (canMove)
+        if (canMove == true)
         {
 
             float vertical = Input.GetAxis("Vertical");
