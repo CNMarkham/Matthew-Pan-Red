@@ -5,6 +5,7 @@ using UnityEngine;
 public class lootboxSpawner : MonoBehaviour
 {
     public GameObject Lootbox;
+    public int numberOfBoxes;
     // Start is called before the first frame update
     void Start()
     {
