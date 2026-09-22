@@ -9,7 +9,10 @@ public class lootboxSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        for (int i = 0; i < numberOfBoxes; i++)
+        {
+            GameObject lootboxClone = Instantiate(Lootbox, transform.position, transform.rotation);
+        }
     }
 
     // Update is called once per frame

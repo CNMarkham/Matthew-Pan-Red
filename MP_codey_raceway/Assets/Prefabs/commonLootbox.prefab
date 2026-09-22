@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Lootbox: {fileID: 6660520929773545870}
+  numberOfBoxes: 4
 --- !u!1 &6660520929773545870
 GameObject:
   m_ObjectHideFlags: 0
