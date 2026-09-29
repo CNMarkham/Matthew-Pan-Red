@@ -6,12 +6,14 @@ public class lootboxSpawner : MonoBehaviour
 {
     public GameObject Lootbox;
     public int numberOfBoxes;
+    public int modifyXPosition;
+    public int modifyZPosition;
     // Start is called before the first frame update
     void Start()
     {
         for (int i = 0; i < numberOfBoxes; i++)
         {
-            GameObject lootboxClone = Instantiate(Lootbox, transform.position, transform.rotation);
+            GameObject lootboxClone = Instantiate(Lootbox, new Vector3(transform.position.x + modifyXPosition * i, transform.position.y, transform.position.z + modifyZPosition * i), transform.rotation);
         }
     }
 
