@@ -5527,7 +5527,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -5577,6 +5577,9 @@ MonoBehaviour:
   powerupList:
   - {fileID: 3736284584761833914, guid: 0b4017d3150e1fb40a28e62d773b3e7e, type: 3}
   - {fileID: 4251771769796365660, guid: 25d76765a846af449ae81a07d7c814a4, type: 3}
+  randomNumberInList: 0
+  chosenPowerup: {fileID: 0}
+  spawnDistance: 2
 --- !u!1001 &648790205
 PrefabInstance:
   m_ObjectHideFlags: 0
