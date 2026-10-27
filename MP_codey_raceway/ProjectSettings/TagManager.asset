@@ -7,6 +7,7 @@ TagManager:
   - player
   - checkpoint
   - lootboxes
+  - obstacles
   layers:
   - Default
   - TransparentFX
