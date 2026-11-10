@@ -11,10 +11,24 @@ public class SelectRandomPowerup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
-            Vector3 spawnPosition = transform.position + (transform.forward * spawnDistance);
-            Instantiate(chosenPowerup, spawnPosition, transform.rotation);
+            if (chosenPowerup == powerupList[0] || chosenPowerup == powerupList[1])
+            {
+                Vector3 spawnPosition = transform.position + (transform.forward * spawnDistance);
+                Instantiate(chosenPowerup, spawnPosition, transform.rotation);
+            }
+            else
+            {
+                RaycastHit hit;
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    Vector3 spawnPosition = hit.point;
+                    spawnPosition.y += 400f;
+                    Instantiate(chosenPowerup, spawnPosition, transform.rotation);
+                }
+            }
         }
     }
     private void OnTriggerEnter(Collider other)

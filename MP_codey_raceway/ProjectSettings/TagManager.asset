@@ -8,6 +8,7 @@ TagManager:
   - checkpoint
   - lootboxes
   - obstacles
+  - tree
   layers:
   - Default
   - TransparentFX
