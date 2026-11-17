@@ -14,11 +14,11 @@ public class checkpointCollision : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "player" && didCollide == false)
-            count.triggeredCheckpoints++;
+        if (other.gameObject.CompareTag("player") && didCollide == false)
         {
+            count.triggeredCheckpoints++;
             didCollide = true;
-            //print("checkpoint touched");
+            print("checkpoint touched");
         }
     }
 }

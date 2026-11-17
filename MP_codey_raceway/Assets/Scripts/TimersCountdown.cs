@@ -34,7 +34,8 @@ public class TimersCountdown: MonoBehaviour
         if (totalLapTime <= 0)
         {
             codey.canMove = false;
-            print("get gud");
+            print("gg ez boi");
+            startCountdown.text = "You Lost :wilted rose:";
         }
     }
 }

@@ -9,6 +9,7 @@ TagManager:
   - lootboxes
   - obstacles
   - tree
+  - terrain
   layers:
   - Default
   - TransparentFX

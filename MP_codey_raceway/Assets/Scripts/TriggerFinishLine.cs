@@ -12,10 +12,13 @@ public class TriggerFinishLine : MonoBehaviour
             if (checkpoointTracker.triggeredCheckpoints == checkpoointTracker.numberOfCheckpoints)
             {
                 print("You Win!");
+                GetComponent<TimersCountdown>().startCountdown.text = "You Win!!";
             }
             else
             {
-                print("placeholder");
+                print("get gud");
+                GetComponent<TimersCountdown>().startCountdown.text = "royiki tenkai: fukuma mizushi";
+
             }
         }
     }
