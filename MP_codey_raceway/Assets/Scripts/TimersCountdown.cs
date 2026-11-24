@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimersCountdown: MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class TimersCountdown: MonoBehaviour
         {
             codey.canMove = false;
             print("gg ez boi");
-            startCountdown.text = "You Lost :wilted rose:";
+            SceneManager.LoadScene(1);
         }
     }
 }
